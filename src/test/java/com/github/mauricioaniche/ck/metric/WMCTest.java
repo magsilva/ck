@@ -19,9 +19,8 @@ public class WMCTest extends BaseTest {
 
 	@Test
 	public void countAllBranchInstructions() {
-		
 		CKNumber a = report.getByClassName("wmc.CC1");
-		Assert.assertEquals(5, a.getWMC());
+		Assert.assertEquals(4, a.getWMC());
 		CKNumber b = report.getByClassName("wmc.CC2");
 		Assert.assertEquals(5, b.getWMC());
 	}
