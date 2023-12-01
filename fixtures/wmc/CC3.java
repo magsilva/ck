@@ -2,26 +2,27 @@ package wmc;
 
 public class CC3 {
 
-    public int precoSorvete(boolean premium, boolean casquinha, int coberturas) {
-        int preco = 0;
+    public int iceCreamPrice(boolean premium, boolean cone, int toppings) {
+        int price = 0;
+
         if (premium) {
-            preco = 20;
+            price = 20;
         } else {
-            preco = 15;
+            price = 15;
         }
 
-        if (casquinha) {
-            preco = preco + 2;
+        if (cone) {
+            price = price + 2;
         } else {
-            preco = preco + 1;
+            price = price + 1;
         }
 
-        if (coberturas > 1) {
-            preco = preco + 2;
+        if (toppings > 1) {
+            price = price + 2;
         } else {
-            preco = preco + 1;
+            price = price + 1;
         }
-        return preco;
+
+        return price;
     }
-
 }
