@@ -23,5 +23,9 @@ public class WMCTest extends BaseTest {
 		Assert.assertEquals(4, a.getWMC());
 		CKNumber b = report.getByClassName("wmc.CC2");
 		Assert.assertEquals(5, b.getWMC());
+		CKNumber c = report.getByClassName("wmc.CC3");
+		Assert.assertEquals(4, c.getWMC());
+		CKNumber d = report.getByClassName("wmc.CC4");
+		Assert.assertEquals(2, d.getWMC());
 	}
 }
